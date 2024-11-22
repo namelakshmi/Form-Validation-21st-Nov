@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Date Input (Format: dd-mm-yy)</h2>
+
+    <table>
+        <tr>
+            <td><label for="un"><b>Username</b></label><br>
+                <input type="text" id="un" pattern="+." placeholder="username"><br>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="Password"><b>password</b></label><br>
+                <input type="text" placeholder="password" id="password" pattern="[a-zA-Z\d!&*@]{8-15}" required
+                    title="Please enter min 8 and max 15"><br>
+            </td><br>
+
+        </tr>
+        <tr>
+            <td> <input type="date" pattern="(0?[1-9]|[012]  [0-9]|3[01])/(0?[1-9]|  1[012])/\d{4} " maxlength="8"
+                    required><br></td>
+        </tr>
+
+
+
+
+
+        <td><button type="submit"> submit </button></td>
+    </table>
+
+</body>
+
+</html>
